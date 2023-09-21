@@ -1,0 +1,146 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.0/checkpoint1/simulation/modelsim
+valu
+Z1 !s110 1695152255
+!i10b 1
+!s100 UJ3D`S;ezMFHn1G2XDQ>z2
+I;RM;c<Ylf8>k]h=e`Wc6Z0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1695050352
+8C:/intelFPGA_lite/17.0/checkpoint1/alu.v
+FC:/intelFPGA_lite/17.0/checkpoint1/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1695152254.000000
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint1
+Z7 tCvgOpt 0
+valu_tb
+R1
+!i10b 1
+!s100 _VBMEf4SJmm`BE`nXKY=C0
+I^@H>472R<;O_T;oAY91;[0
+R2
+R0
+w1694628799
+8C:/intelFPGA_lite/17.0/checkpoint1/alu_tb.v
+FC:/intelFPGA_lite/17.0/checkpoint1/alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z8 !s108 1695152255.000000
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/alu_tb.v|
+!i113 1
+R5
+R6
+R7
+vCSA_32bit
+R1
+!i10b 1
+!s100 ekF1HLeP7ZAejF?jBf>PK1
+I>DW5R3AlGz^7ERXAH>ZKZ3
+R2
+R0
+w1695048379
+8C:/intelFPGA_lite/17.0/checkpoint1/CSA_32bit.v
+FC:/intelFPGA_lite/17.0/checkpoint1/CSA_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/CSA_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/CSA_32bit.v|
+!i113 1
+R5
+R6
+R7
+n@c@s@a_32bit
+vFA
+Z9 !s110 1695152254
+!i10b 1
+!s100 U0gY=J]g=fOUO0NTFIH3k2
+I@P]^GiWfPm3J@W>Ed6[Y^3
+R2
+R0
+w1694985653
+8C:/intelFPGA_lite/17.0/checkpoint1/FA.v
+FC:/intelFPGA_lite/17.0/checkpoint1/FA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/FA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/FA.v|
+!i113 1
+R5
+R6
+R7
+n@f@a
+vRCA
+R9
+!i10b 1
+!s100 HESN4N9?8SRW[1RZozTA;1
+IBoGG?>;T@n4UiIkbPQ=Ei3
+R2
+R0
+w1694399823
+8C:/intelFPGA_lite/17.0/checkpoint1/RCA.v
+FC:/intelFPGA_lite/17.0/checkpoint1/RCA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/RCA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/RCA.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a
+vRCA_16bit
+R1
+!i10b 1
+!s100 8h2?@;Yb>3I]JiRlZ1c:22
+Iz43Tb6OP2?K6fC<AiTzRl3
+R2
+R0
+w1694997530
+8C:/intelFPGA_lite/17.0/checkpoint1/RCA_16bit.v
+FC:/intelFPGA_lite/17.0/checkpoint1/RCA_16bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/17.0/checkpoint1/RCA_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/17.0/checkpoint1|C:/intelFPGA_lite/17.0/checkpoint1/RCA_16bit.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a_16bit

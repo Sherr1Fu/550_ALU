@@ -1,0 +1,1137 @@
+|alu
+data_operandA[0] => data_operandA[0].IN1
+data_operandA[1] => data_operandA[1].IN1
+data_operandA[2] => data_operandA[2].IN1
+data_operandA[3] => data_operandA[3].IN1
+data_operandA[4] => data_operandA[4].IN1
+data_operandA[5] => data_operandA[5].IN1
+data_operandA[6] => data_operandA[6].IN1
+data_operandA[7] => data_operandA[7].IN1
+data_operandA[8] => data_operandA[8].IN1
+data_operandA[9] => data_operandA[9].IN1
+data_operandA[10] => data_operandA[10].IN1
+data_operandA[11] => data_operandA[11].IN1
+data_operandA[12] => data_operandA[12].IN1
+data_operandA[13] => data_operandA[13].IN1
+data_operandA[14] => data_operandA[14].IN1
+data_operandA[15] => data_operandA[15].IN1
+data_operandA[16] => data_operandA[16].IN1
+data_operandA[17] => data_operandA[17].IN1
+data_operandA[18] => data_operandA[18].IN1
+data_operandA[19] => data_operandA[19].IN1
+data_operandA[20] => data_operandA[20].IN1
+data_operandA[21] => data_operandA[21].IN1
+data_operandA[22] => data_operandA[22].IN1
+data_operandA[23] => data_operandA[23].IN1
+data_operandA[24] => data_operandA[24].IN1
+data_operandA[25] => data_operandA[25].IN1
+data_operandA[26] => data_operandA[26].IN1
+data_operandA[27] => data_operandA[27].IN1
+data_operandA[28] => data_operandA[28].IN1
+data_operandA[29] => data_operandA[29].IN1
+data_operandA[30] => data_operandA[30].IN1
+data_operandA[31] => data_operandA[31].IN1
+data_operandB[0] => wireB.DATAA
+data_operandB[0] => wireB.DATAB
+data_operandB[1] => wireB.DATAA
+data_operandB[1] => wireB.DATAB
+data_operandB[2] => wireB.DATAA
+data_operandB[2] => wireB.DATAB
+data_operandB[3] => wireB.DATAA
+data_operandB[3] => wireB.DATAB
+data_operandB[4] => wireB.DATAA
+data_operandB[4] => wireB.DATAB
+data_operandB[5] => wireB.DATAA
+data_operandB[5] => wireB.DATAB
+data_operandB[6] => wireB.DATAA
+data_operandB[6] => wireB.DATAB
+data_operandB[7] => wireB.DATAA
+data_operandB[7] => wireB.DATAB
+data_operandB[8] => wireB.DATAA
+data_operandB[8] => wireB.DATAB
+data_operandB[9] => wireB.DATAA
+data_operandB[9] => wireB.DATAB
+data_operandB[10] => wireB.DATAA
+data_operandB[10] => wireB.DATAB
+data_operandB[11] => wireB.DATAA
+data_operandB[11] => wireB.DATAB
+data_operandB[12] => wireB.DATAA
+data_operandB[12] => wireB.DATAB
+data_operandB[13] => wireB.DATAA
+data_operandB[13] => wireB.DATAB
+data_operandB[14] => wireB.DATAA
+data_operandB[14] => wireB.DATAB
+data_operandB[15] => wireB.DATAA
+data_operandB[15] => wireB.DATAB
+data_operandB[16] => wireB.DATAA
+data_operandB[16] => wireB.DATAB
+data_operandB[17] => wireB.DATAA
+data_operandB[17] => wireB.DATAB
+data_operandB[18] => wireB.DATAA
+data_operandB[18] => wireB.DATAB
+data_operandB[19] => wireB.DATAA
+data_operandB[19] => wireB.DATAB
+data_operandB[20] => wireB.DATAA
+data_operandB[20] => wireB.DATAB
+data_operandB[21] => wireB.DATAA
+data_operandB[21] => wireB.DATAB
+data_operandB[22] => wireB.DATAA
+data_operandB[22] => wireB.DATAB
+data_operandB[23] => wireB.DATAA
+data_operandB[23] => wireB.DATAB
+data_operandB[24] => wireB.DATAA
+data_operandB[24] => wireB.DATAB
+data_operandB[25] => wireB.DATAA
+data_operandB[25] => wireB.DATAB
+data_operandB[26] => wireB.DATAA
+data_operandB[26] => wireB.DATAB
+data_operandB[27] => wireB.DATAA
+data_operandB[27] => wireB.DATAB
+data_operandB[28] => wireB.DATAA
+data_operandB[28] => wireB.DATAB
+data_operandB[29] => wireB.DATAA
+data_operandB[29] => wireB.DATAB
+data_operandB[30] => wireB.DATAA
+data_operandB[30] => wireB.DATAB
+data_operandB[31] => wireB.DATAA
+data_operandB[31] => wireB.DATAB
+ctrl_ALUopcode[0] => ctrl_ALUopcode[0].IN1
+ctrl_ALUopcode[1] => ~NO_FANOUT~
+ctrl_ALUopcode[2] => ~NO_FANOUT~
+ctrl_ALUopcode[3] => ~NO_FANOUT~
+ctrl_ALUopcode[4] => ~NO_FANOUT~
+ctrl_shiftamt[0] => ~NO_FANOUT~
+ctrl_shiftamt[1] => ~NO_FANOUT~
+ctrl_shiftamt[2] => ~NO_FANOUT~
+ctrl_shiftamt[3] => ~NO_FANOUT~
+ctrl_shiftamt[4] => ~NO_FANOUT~
+data_result[0] <= CSA_32bit:csa0_32.port5
+data_result[1] <= CSA_32bit:csa0_32.port5
+data_result[2] <= CSA_32bit:csa0_32.port5
+data_result[3] <= CSA_32bit:csa0_32.port5
+data_result[4] <= CSA_32bit:csa0_32.port5
+data_result[5] <= CSA_32bit:csa0_32.port5
+data_result[6] <= CSA_32bit:csa0_32.port5
+data_result[7] <= CSA_32bit:csa0_32.port5
+data_result[8] <= CSA_32bit:csa0_32.port5
+data_result[9] <= CSA_32bit:csa0_32.port5
+data_result[10] <= CSA_32bit:csa0_32.port5
+data_result[11] <= CSA_32bit:csa0_32.port5
+data_result[12] <= CSA_32bit:csa0_32.port5
+data_result[13] <= CSA_32bit:csa0_32.port5
+data_result[14] <= CSA_32bit:csa0_32.port5
+data_result[15] <= CSA_32bit:csa0_32.port5
+data_result[16] <= CSA_32bit:csa0_32.port5
+data_result[17] <= CSA_32bit:csa0_32.port5
+data_result[18] <= CSA_32bit:csa0_32.port5
+data_result[19] <= CSA_32bit:csa0_32.port5
+data_result[20] <= CSA_32bit:csa0_32.port5
+data_result[21] <= CSA_32bit:csa0_32.port5
+data_result[22] <= CSA_32bit:csa0_32.port5
+data_result[23] <= CSA_32bit:csa0_32.port5
+data_result[24] <= CSA_32bit:csa0_32.port5
+data_result[25] <= CSA_32bit:csa0_32.port5
+data_result[26] <= CSA_32bit:csa0_32.port5
+data_result[27] <= CSA_32bit:csa0_32.port5
+data_result[28] <= CSA_32bit:csa0_32.port5
+data_result[29] <= CSA_32bit:csa0_32.port5
+data_result[30] <= CSA_32bit:csa0_32.port5
+data_result[31] <= CSA_32bit:csa0_32.port5
+isNotEqual <= <GND>
+isLessThan <= <GND>
+overflow <= CSA_32bit:csa0_32.port3
+
+
+|alu|CSA_32bit:csa0_32
+dataA[0] => dataA[0].IN1
+dataA[1] => dataA[1].IN1
+dataA[2] => dataA[2].IN1
+dataA[3] => dataA[3].IN1
+dataA[4] => dataA[4].IN1
+dataA[5] => dataA[5].IN1
+dataA[6] => dataA[6].IN1
+dataA[7] => dataA[7].IN1
+dataA[8] => dataA[8].IN1
+dataA[9] => dataA[9].IN1
+dataA[10] => dataA[10].IN1
+dataA[11] => dataA[11].IN1
+dataA[12] => dataA[12].IN1
+dataA[13] => dataA[13].IN1
+dataA[14] => dataA[14].IN1
+dataA[15] => dataA[15].IN1
+dataA[16] => dataA[16].IN2
+dataA[17] => dataA[17].IN2
+dataA[18] => dataA[18].IN2
+dataA[19] => dataA[19].IN2
+dataA[20] => dataA[20].IN2
+dataA[21] => dataA[21].IN2
+dataA[22] => dataA[22].IN2
+dataA[23] => dataA[23].IN2
+dataA[24] => dataA[24].IN2
+dataA[25] => dataA[25].IN2
+dataA[26] => dataA[26].IN2
+dataA[27] => dataA[27].IN2
+dataA[28] => dataA[28].IN2
+dataA[29] => dataA[29].IN2
+dataA[30] => dataA[30].IN2
+dataA[31] => dataA[31].IN2
+dataB[0] => dataB[0].IN1
+dataB[1] => dataB[1].IN1
+dataB[2] => dataB[2].IN1
+dataB[3] => dataB[3].IN1
+dataB[4] => dataB[4].IN1
+dataB[5] => dataB[5].IN1
+dataB[6] => dataB[6].IN1
+dataB[7] => dataB[7].IN1
+dataB[8] => dataB[8].IN1
+dataB[9] => dataB[9].IN1
+dataB[10] => dataB[10].IN1
+dataB[11] => dataB[11].IN1
+dataB[12] => dataB[12].IN1
+dataB[13] => dataB[13].IN1
+dataB[14] => dataB[14].IN1
+dataB[15] => dataB[15].IN1
+dataB[16] => dataB[16].IN2
+dataB[17] => dataB[17].IN2
+dataB[18] => dataB[18].IN2
+dataB[19] => dataB[19].IN2
+dataB[20] => dataB[20].IN2
+dataB[21] => dataB[21].IN2
+dataB[22] => dataB[22].IN2
+dataB[23] => dataB[23].IN2
+dataB[24] => dataB[24].IN2
+dataB[25] => dataB[25].IN2
+dataB[26] => dataB[26].IN2
+dataB[27] => dataB[27].IN2
+dataB[28] => dataB[28].IN2
+dataB[29] => dataB[29].IN2
+dataB[30] => dataB[30].IN2
+dataB[31] => dataB[31].IN2
+Cin => Cin.IN1
+Ovf <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum[0] <= RCA_16bit:rca2_16.port4
+Sum[1] <= RCA_16bit:rca2_16.port4
+Sum[2] <= RCA_16bit:rca2_16.port4
+Sum[3] <= RCA_16bit:rca2_16.port4
+Sum[4] <= RCA_16bit:rca2_16.port4
+Sum[5] <= RCA_16bit:rca2_16.port4
+Sum[6] <= RCA_16bit:rca2_16.port4
+Sum[7] <= RCA_16bit:rca2_16.port4
+Sum[8] <= RCA_16bit:rca2_16.port4
+Sum[9] <= RCA_16bit:rca2_16.port4
+Sum[10] <= RCA_16bit:rca2_16.port4
+Sum[11] <= RCA_16bit:rca2_16.port4
+Sum[12] <= RCA_16bit:rca2_16.port4
+Sum[13] <= RCA_16bit:rca2_16.port4
+Sum[14] <= RCA_16bit:rca2_16.port4
+Sum[15] <= RCA_16bit:rca2_16.port4
+Sum[16] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[17] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[18] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[19] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[20] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[21] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[22] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[23] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[24] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[25] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[26] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[27] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[28] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[29] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[30] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum[31] <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16
+dataA[0] => dataA[0].IN1
+dataA[1] => dataA[1].IN1
+dataA[2] => dataA[2].IN1
+dataA[3] => dataA[3].IN1
+dataA[4] => dataA[4].IN1
+dataA[5] => dataA[5].IN1
+dataA[6] => dataA[6].IN1
+dataA[7] => dataA[7].IN1
+dataA[8] => dataA[8].IN1
+dataA[9] => dataA[9].IN1
+dataA[10] => dataA[10].IN1
+dataA[11] => dataA[11].IN1
+dataA[12] => dataA[12].IN1
+dataA[13] => dataA[13].IN1
+dataA[14] => dataA[14].IN1
+dataA[15] => dataA[15].IN1
+dataB[0] => dataB[0].IN1
+dataB[1] => dataB[1].IN1
+dataB[2] => dataB[2].IN1
+dataB[3] => dataB[3].IN1
+dataB[4] => dataB[4].IN1
+dataB[5] => dataB[5].IN1
+dataB[6] => dataB[6].IN1
+dataB[7] => dataB[7].IN1
+dataB[8] => dataB[8].IN1
+dataB[9] => dataB[9].IN1
+dataB[10] => dataB[10].IN1
+dataB[11] => dataB[11].IN1
+dataB[12] => dataB[12].IN1
+dataB[13] => dataB[13].IN1
+dataB[14] => dataB[14].IN1
+dataB[15] => dataB[15].IN1
+Cin => Cin.IN1
+Cout <= RCA:rca3.port3
+Sum[0] <= RCA:rca0.port4
+Sum[1] <= RCA:rca0.port4
+Sum[2] <= RCA:rca0.port4
+Sum[3] <= RCA:rca0.port4
+Sum[4] <= RCA:rca1.port4
+Sum[5] <= RCA:rca1.port4
+Sum[6] <= RCA:rca1.port4
+Sum[7] <= RCA:rca1.port4
+Sum[8] <= RCA:rca2.port4
+Sum[9] <= RCA:rca2.port4
+Sum[10] <= RCA:rca2.port4
+Sum[11] <= RCA:rca2.port4
+Sum[12] <= RCA:rca3.port4
+Sum[13] <= RCA:rca3.port4
+Sum[14] <= RCA:rca3.port4
+Sum[15] <= RCA:rca3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16
+dataA[0] => dataA[0].IN1
+dataA[1] => dataA[1].IN1
+dataA[2] => dataA[2].IN1
+dataA[3] => dataA[3].IN1
+dataA[4] => dataA[4].IN1
+dataA[5] => dataA[5].IN1
+dataA[6] => dataA[6].IN1
+dataA[7] => dataA[7].IN1
+dataA[8] => dataA[8].IN1
+dataA[9] => dataA[9].IN1
+dataA[10] => dataA[10].IN1
+dataA[11] => dataA[11].IN1
+dataA[12] => dataA[12].IN1
+dataA[13] => dataA[13].IN1
+dataA[14] => dataA[14].IN1
+dataA[15] => dataA[15].IN1
+dataB[0] => dataB[0].IN1
+dataB[1] => dataB[1].IN1
+dataB[2] => dataB[2].IN1
+dataB[3] => dataB[3].IN1
+dataB[4] => dataB[4].IN1
+dataB[5] => dataB[5].IN1
+dataB[6] => dataB[6].IN1
+dataB[7] => dataB[7].IN1
+dataB[8] => dataB[8].IN1
+dataB[9] => dataB[9].IN1
+dataB[10] => dataB[10].IN1
+dataB[11] => dataB[11].IN1
+dataB[12] => dataB[12].IN1
+dataB[13] => dataB[13].IN1
+dataB[14] => dataB[14].IN1
+dataB[15] => dataB[15].IN1
+Cin => Cin.IN1
+Cout <= RCA:rca3.port3
+Sum[0] <= RCA:rca0.port4
+Sum[1] <= RCA:rca0.port4
+Sum[2] <= RCA:rca0.port4
+Sum[3] <= RCA:rca0.port4
+Sum[4] <= RCA:rca1.port4
+Sum[5] <= RCA:rca1.port4
+Sum[6] <= RCA:rca1.port4
+Sum[7] <= RCA:rca1.port4
+Sum[8] <= RCA:rca2.port4
+Sum[9] <= RCA:rca2.port4
+Sum[10] <= RCA:rca2.port4
+Sum[11] <= RCA:rca2.port4
+Sum[12] <= RCA:rca3.port4
+Sum[13] <= RCA:rca3.port4
+Sum[14] <= RCA:rca3.port4
+Sum[15] <= RCA:rca3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16
+dataA[0] => dataA[0].IN1
+dataA[1] => dataA[1].IN1
+dataA[2] => dataA[2].IN1
+dataA[3] => dataA[3].IN1
+dataA[4] => dataA[4].IN1
+dataA[5] => dataA[5].IN1
+dataA[6] => dataA[6].IN1
+dataA[7] => dataA[7].IN1
+dataA[8] => dataA[8].IN1
+dataA[9] => dataA[9].IN1
+dataA[10] => dataA[10].IN1
+dataA[11] => dataA[11].IN1
+dataA[12] => dataA[12].IN1
+dataA[13] => dataA[13].IN1
+dataA[14] => dataA[14].IN1
+dataA[15] => dataA[15].IN1
+dataB[0] => dataB[0].IN1
+dataB[1] => dataB[1].IN1
+dataB[2] => dataB[2].IN1
+dataB[3] => dataB[3].IN1
+dataB[4] => dataB[4].IN1
+dataB[5] => dataB[5].IN1
+dataB[6] => dataB[6].IN1
+dataB[7] => dataB[7].IN1
+dataB[8] => dataB[8].IN1
+dataB[9] => dataB[9].IN1
+dataB[10] => dataB[10].IN1
+dataB[11] => dataB[11].IN1
+dataB[12] => dataB[12].IN1
+dataB[13] => dataB[13].IN1
+dataB[14] => dataB[14].IN1
+dataB[15] => dataB[15].IN1
+Cin => Cin.IN1
+Cout <= RCA:rca3.port3
+Sum[0] <= RCA:rca0.port4
+Sum[1] <= RCA:rca0.port4
+Sum[2] <= RCA:rca0.port4
+Sum[3] <= RCA:rca0.port4
+Sum[4] <= RCA:rca1.port4
+Sum[5] <= RCA:rca1.port4
+Sum[6] <= RCA:rca1.port4
+Sum[7] <= RCA:rca1.port4
+Sum[8] <= RCA:rca2.port4
+Sum[9] <= RCA:rca2.port4
+Sum[10] <= RCA:rca2.port4
+Sum[11] <= RCA:rca2.port4
+Sum[12] <= RCA:rca3.port4
+Sum[13] <= RCA:rca3.port4
+Sum[14] <= RCA:rca3.port4
+Sum[15] <= RCA:rca3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+cout <= FA:fa3.port3
+sum[0] <= FA:fa0.port4
+sum[1] <= FA:fa1.port4
+sum[2] <= FA:fa2.port4
+sum[3] <= FA:fa3.port4
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa0
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa1
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa2
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa3
+a => s1.IN0
+a => c2.IN0
+b => s1.IN1
+b => c2.IN1
+cin => comb.IN1
+cin => c1.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

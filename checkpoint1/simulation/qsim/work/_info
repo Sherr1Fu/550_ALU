@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.0/checkpoint1/simulation/qsim
+valu
+Z1 !s110 1695152231
+!i10b 1
+!s100 ?UWJQhNO]SZ5H7L7RWThh1
+IROl:cmcRS=i@TMlHK`KNT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1695152230
+Z3 8alu.vo
+Z4 Falu.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1695152230.000000
+Z7 !s107 alu.vo|
+Z8 !s90 -work|work|alu.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+valu_vlg_vec_tst
+R1
+!i10b 1
+!s100 2E9]<AhNZYY3C>]D>=GD72
+Io@d[@Y6U09hC[HB=zj9]=3
+R2
+R0
+w1695152229
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+!s108 1695152231.000000
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R9
+R10
+vCSA_32bit
+Z12 !s110 1695049489
+!i10b 1
+!s100 B><?GW5a_=9JnJMU4Q9g^0
+IJSRz`PJ6WUR0A@baz]nkE0
+R2
+R0
+w1695049488
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1695049489.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@c@s@a_32bit
+vCSA_32bit_vlg_vec_tst
+R12
+!i10b 1
+!s100 m;Uc[I9WZY?BAN9S^7Yd`1
+I^8FB>CAiKdf[CLf8kR@YP0
+R2
+R0
+w1695049487
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R9
+R10
+n@c@s@a_32bit_vlg_vec_tst
