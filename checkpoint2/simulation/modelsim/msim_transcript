@@ -1,0 +1,207 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do alu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/SRA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/SRA.v 
+# -- Compiling module SRA
+# 
+# Top level modules:
+# 	SRA
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/RCA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/RCA.v 
+# -- Compiling module RCA
+# 
+# Top level modules:
+# 	RCA
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/FA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/FA.v 
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v 
+# -- Compiling module CSA_32bit
+# 
+# Top level modules:
+# 	CSA_32bit
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v 
+# -- Compiling module RCA_16bit
+# 
+# Top level modules:
+# 	RCA_16bit
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/selecter3_5.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/selecter3_5.v 
+# -- Compiling module selecter3_5
+# 
+# Top level modules:
+# 	selecter3_5
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/mux.v 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/SLL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/SLL.v 
+# -- Compiling module SLL
+# 
+# Top level modules:
+# 	SLL
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/17.0/checkpoint2 {C:/intelFPGA_lite/17.0/checkpoint2/alu_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:13 on Sep 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/17.0/checkpoint2" C:/intelFPGA_lite/17.0/checkpoint2/alu_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 20:05:13 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 20:05:13 on Sep 27,2023
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.CSA_32bit
+# Loading work.RCA_16bit
+# Loading work.RCA
+# Loading work.FA
+# Loading work.SLL
+# Loading work.mux
+# Loading work.SRA
+# Loading work.selecter3_5
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v(11): [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/csa0_32/rca0_16 File: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v(12): [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/csa0_32/rca1_16 File: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(8): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/mux0 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/mux2 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/mux3 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s2a_loop[0]/mux5 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s2a_loop[1]/mux5 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s2a_loop[2]/mux5 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(27): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s2a_loop[3]/mux5 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[0]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[1]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[2]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[3]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[4]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[5]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[6]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(42): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s3a_loop[7]/mux7 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[0]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[1]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[2]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[3]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[4]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[5]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[6]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[7]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[8]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[9]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[10]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[11]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[12]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[13]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[14]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/17.0/checkpoint2/SLL.v(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'in2'. The port definition is at: C:/intelFPGA_lite/17.0/checkpoint2/mux.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/alu_ut/sll/s4a_loop[15]/mux9 File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+# The simulation completed without errors
+# ** Note: $stop    : C:/intelFPGA_lite/17.0/checkpoint2/alu_tb.v(51)
+#    Time: 2480 ns  Iteration: 1  Instance: /alu_tb
+# Break in Module alu_tb at C:/intelFPGA_lite/17.0/checkpoint2/alu_tb.v line 51
+# End time: 20:06:03 on Sep 27,2023, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 33

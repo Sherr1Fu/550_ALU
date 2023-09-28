@@ -1,0 +1,906 @@
+Analysis & Synthesis report for alu
+Wed Sep 27 20:04:19 2023
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[15].mux9"
+ 11. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[14].mux9"
+ 12. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[13].mux9"
+ 13. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[12].mux9"
+ 14. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[11].mux9"
+ 15. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[10].mux9"
+ 16. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[9].mux9"
+ 17. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[8].mux9"
+ 18. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[7].mux9"
+ 19. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[6].mux9"
+ 20. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[5].mux9"
+ 21. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[4].mux9"
+ 22. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[3].mux9"
+ 23. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[2].mux9"
+ 24. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[1].mux9"
+ 25. Port Connectivity Checks: "SLL:sll|mux:s4a_loop[0].mux9"
+ 26. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[7].mux7"
+ 27. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[6].mux7"
+ 28. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[5].mux7"
+ 29. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[4].mux7"
+ 30. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[3].mux7"
+ 31. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[2].mux7"
+ 32. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[1].mux7"
+ 33. Port Connectivity Checks: "SLL:sll|mux:s3a_loop[0].mux7"
+ 34. Port Connectivity Checks: "SLL:sll|mux:s2a_loop[3].mux5"
+ 35. Port Connectivity Checks: "SLL:sll|mux:s2a_loop[2].mux5"
+ 36. Port Connectivity Checks: "SLL:sll|mux:s2a_loop[1].mux5"
+ 37. Port Connectivity Checks: "SLL:sll|mux:s2a_loop[0].mux5"
+ 38. Port Connectivity Checks: "SLL:sll|mux:mux3"
+ 39. Port Connectivity Checks: "SLL:sll|mux:mux2"
+ 40. Port Connectivity Checks: "SLL:sll|mux:mux0"
+ 41. Port Connectivity Checks: "CSA_32bit:csa0_32|RCA_16bit:rca1_16"
+ 42. Port Connectivity Checks: "CSA_32bit:csa0_32|RCA_16bit:rca0_16"
+ 43. Port Connectivity Checks: "CSA_32bit:csa0_32"
+ 44. Post-Synthesis Netlist Statistics for Top Partition
+ 45. Elapsed Time Per Partition
+ 46. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 27 20:04:19 2023       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; alu                                         ;
+; Top-level Entity Name              ; alu                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 487                                         ;
+;     Total combinational functions  ; 487                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 109                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; alu                ; alu                ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; SRA.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/SRA.v         ;         ;
+; RCA.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/RCA.v         ;         ;
+; FA.v                             ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/FA.v          ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/alu.v         ;         ;
+; CSA_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v   ;         ;
+; RCA_16bit.v                      ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v   ;         ;
+; selecter3_5.v                    ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/selecter3_5.v ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/mux.v         ;         ;
+; SLL.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.0/checkpoint2/SLL.v         ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 487                     ;
+;                                             ;                         ;
+; Total combinational functions               ; 487                     ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 284                     ;
+;     -- 3 input functions                    ; 190                     ;
+;     -- <=2 input functions                  ; 13                      ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 487                     ;
+;     -- arithmetic mode                      ; 0                       ;
+;                                             ;                         ;
+; Total registers                             ; 0                       ;
+;     -- Dedicated logic registers            ; 0                       ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 109                     ;
+;                                             ;                         ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; ctrl_ALUopcode[0]~input ;
+; Maximum fan-out                             ; 100                     ;
+; Total fan-out                               ; 1876                    ;
+; Average fan-out                             ; 2.66                    ;
++---------------------------------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+-------------+--------------+
+; |alu                           ; 487 (15)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                     ; alu         ; work         ;
+;    |CSA_32bit:csa0_32|         ; 93 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32                                   ; CSA_32bit   ; work         ;
+;       |RCA_16bit:rca0_16|      ; 27 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16                 ; RCA_16bit   ; work         ;
+;          |RCA:rca0|            ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0        ; RCA         ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca1|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca1|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca2|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca2|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca3|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca3|FA:fa2 ; FA          ; work         ;
+;       |RCA_16bit:rca1_16|      ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16                 ; RCA_16bit   ; work         ;
+;          |RCA:rca0|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0        ; RCA         ; work         ;
+;             |FA:fa0|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca0|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca1|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1        ; RCA         ; work         ;
+;             |FA:fa0|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca1|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca2|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2        ; RCA         ; work         ;
+;             |FA:fa0|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca2|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca3|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3        ; RCA         ; work         ;
+;             |FA:fa0|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca1_16|RCA:rca3|FA:fa1 ; FA          ; work         ;
+;       |RCA_16bit:rca2_16|      ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16                 ; RCA_16bit   ; work         ;
+;          |RCA:rca0|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca0|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca1|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca1|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca2|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca2|FA:fa3 ; FA          ; work         ;
+;          |RCA:rca3|            ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3        ; RCA         ; work         ;
+;             |FA:fa0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa0 ; FA          ; work         ;
+;             |FA:fa1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa1 ; FA          ; work         ;
+;             |FA:fa2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa2 ; FA          ; work         ;
+;             |FA:fa3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|CSA_32bit:csa0_32|RCA_16bit:rca2_16|RCA:rca3|FA:fa3 ; FA          ; work         ;
+;    |SLL:sll|                   ; 99 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll                                             ; SLL         ; work         ;
+;       |mux:s0_loop[1].mux1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s0_loop[1].mux1                         ; mux         ; work         ;
+;       |mux:s0_loop[26].mux1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s0_loop[26].mux1                        ; mux         ; work         ;
+;       |mux:s0_loop[27].mux1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s0_loop[27].mux1                        ; mux         ; work         ;
+;       |mux:s0_loop[28].mux1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s0_loop[28].mux1                        ; mux         ; work         ;
+;       |mux:s0_loop[29].mux1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s0_loop[29].mux1                        ; mux         ; work         ;
+;       |mux:s1_loop[10].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[10].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[11].mux4|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[11].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[12].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[12].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[13].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[13].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[14].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[14].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[15].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[15].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[16].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[16].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[17].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[17].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[18].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[18].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[19].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[19].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[20].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[20].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[21].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[21].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[22].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[22].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[23].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[23].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[24].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[24].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[25].mux4|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[25].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[26].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[26].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[27].mux4|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[27].mux4                        ; mux         ; work         ;
+;       |mux:s1_loop[2].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[2].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[3].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[3].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[4].mux4|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[4].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[5].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[5].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[6].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[6].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[7].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[7].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[8].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[8].mux4                         ; mux         ; work         ;
+;       |mux:s1_loop[9].mux4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s1_loop[9].mux4                         ; mux         ; work         ;
+;       |mux:s2b_loop[10].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[10].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[11].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[11].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[12].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[12].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[13].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[13].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[14].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[14].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[15].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[15].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[16].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[16].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[17].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[17].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[18].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[18].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[19].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[19].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[20].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[20].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[21].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[21].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[22].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[22].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[23].mux6|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[23].mux6                       ; mux         ; work         ;
+;       |mux:s2b_loop[4].mux6|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[4].mux6                        ; mux         ; work         ;
+;       |mux:s2b_loop[8].mux6|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[8].mux6                        ; mux         ; work         ;
+;       |mux:s2b_loop[9].mux6|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s2b_loop[9].mux6                        ; mux         ; work         ;
+;       |mux:s3a_loop[0].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[0].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[1].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[1].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[2].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[2].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[3].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[3].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[4].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[4].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[5].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[5].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[6].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[6].mux7                        ; mux         ; work         ;
+;       |mux:s3a_loop[7].mux7|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3a_loop[7].mux7                        ; mux         ; work         ;
+;       |mux:s3b_loop[10].mux8|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[10].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[11].mux8|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[11].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[12].mux8|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[12].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[13].mux8|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[13].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[14].mux8|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[14].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[15].mux8|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[15].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[30].mux8|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[30].mux8                       ; mux         ; work         ;
+;       |mux:s3b_loop[8].mux8|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[8].mux8                        ; mux         ; work         ;
+;       |mux:s3b_loop[9].mux8|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:sll|mux:s3b_loop[9].mux8                        ; mux         ; work         ;
+;    |SRA:sra|                   ; 96 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra                                             ; SRA         ; work         ;
+;       |mux:s0_loop[29].mux12|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s0_loop[29].mux12                       ; mux         ; work         ;
+;       |mux:s0_loop[2].mux12|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s0_loop[2].mux12                        ; mux         ; work         ;
+;       |mux:s0_loop[3].mux12|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s0_loop[3].mux12                        ; mux         ; work         ;
+;       |mux:s0_loop[4].mux12|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s0_loop[4].mux12                        ; mux         ; work         ;
+;       |mux:s0_loop[5].mux12|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s0_loop[5].mux12                        ; mux         ; work         ;
+;       |mux:s1_loop[10].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[10].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[11].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[11].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[12].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[12].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[13].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[13].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[14].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[14].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[15].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[15].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[16].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[16].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[17].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[17].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[18].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[18].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[19].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[19].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[20].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[20].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[21].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[21].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[22].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[22].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[23].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[23].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[24].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[24].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[25].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[25].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[26].mux15|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[26].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[27].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[27].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[28].mux15|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[28].mux15                       ; mux         ; work         ;
+;       |mux:s1_loop[4].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[4].mux15                        ; mux         ; work         ;
+;       |mux:s1_loop[5].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[5].mux15                        ; mux         ; work         ;
+;       |mux:s1_loop[6].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[6].mux15                        ; mux         ; work         ;
+;       |mux:s1_loop[7].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[7].mux15                        ; mux         ; work         ;
+;       |mux:s1_loop[8].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[8].mux15                        ; mux         ; work         ;
+;       |mux:s1_loop[9].mux15|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s1_loop[9].mux15                        ; mux         ; work         ;
+;       |mux:s2b_loop[10].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[10].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[11].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[11].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[12].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[12].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[13].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[13].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[14].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[14].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[15].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[15].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[16].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[16].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[17].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[17].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[18].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[18].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[19].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[19].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[20].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[20].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[21].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[21].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[22].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[22].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[23].mux17| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[23].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[25].mux17| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[25].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[26].mux17| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[26].mux17                      ; mux         ; work         ;
+;       |mux:s2b_loop[8].mux17|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[8].mux17                       ; mux         ; work         ;
+;       |mux:s2b_loop[9].mux17|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s2b_loop[9].mux17                       ; mux         ; work         ;
+;       |mux:s3a_loop[24].mux18| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[24].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[25].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[25].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[26].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[26].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[27].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[27].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[28].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[28].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[29].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[29].mux18                      ; mux         ; work         ;
+;       |mux:s3a_loop[30].mux18| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3a_loop[30].mux18                      ; mux         ; work         ;
+;       |mux:s3b_loop[16].mux19| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[16].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[17].mux19| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[17].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[18].mux19| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[18].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[19].mux19| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[19].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[20].mux19| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[20].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[21].mux19| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[21].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[22].mux19| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[22].mux19                      ; mux         ; work         ;
+;       |mux:s3b_loop[23].mux19| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:sra|mux:s3b_loop[23].mux19                      ; mux         ; work         ;
+;    |selecter3_5:selecter|      ; 184 (184)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|selecter3_5:selecter                                ; selecter3_5 ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |alu|selecter3_5:selecter|out[11] ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 40 LEs               ; 8 LEs                  ; No         ; |alu|selecter3_5:selecter|out[23] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |alu|selecter3_5:selecter|out[5]  ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |alu|selecter3_5:selecter|out[26] ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |alu|selecter3_5:selecter|out[2]  ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |alu|selecter3_5:selecter|out[29] ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |alu|selecter3_5:selecter|out[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[15].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[14].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[13].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[12].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[11].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[10].mux9"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[9].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[8].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[7].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[6].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[5].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[4].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[3].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[2].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[1].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s4a_loop[0].mux9"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[7].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[6].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[5].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[4].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[3].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[2].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[1].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s3a_loop[0].mux7"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s2a_loop[3].mux5"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s2a_loop[2].mux5"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s2a_loop[1].mux5"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:s2a_loop[0].mux5"                                                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:mux3"                                                                                                                                                                    ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:mux2"                                                                                                                                                                    ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SLL:sll|mux:mux0"                                                                                                                                                                    ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; in2     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; in2[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CSA_32bit:csa0_32|RCA_16bit:rca1_16"                                                                                                                                                 ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CSA_32bit:csa0_32|RCA_16bit:rca0_16"                                                                                                                                                 ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CSA_32bit:csa0_32"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 109                         ;
+; cycloneiii_lcell_comb ; 487                         ;
+;     normal            ; 487                         ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 190                         ;
+;         4 data inputs ; 284                         ;
+;                       ;                             ;
+; Max LUT depth         ; 22.00                       ;
+; Average LUT depth     ; 11.13                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Sep 27 20:04:10 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sra.v
+    Info (12023): Found entity 1: SRA File: C:/intelFPGA_lite/17.0/checkpoint2/SRA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca.v
+    Info (12023): Found entity 1: RCA File: C:/intelFPGA_lite/17.0/checkpoint2/RCA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ha.v
+    Info (12023): Found entity 1: HA File: C:/intelFPGA_lite/17.0/checkpoint2/HA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fa.v
+    Info (12023): Found entity 1: FA File: C:/intelFPGA_lite/17.0/checkpoint2/FA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
+    Info (12023): Found entity 1: alu_tb File: C:/intelFPGA_lite/17.0/checkpoint2/alu_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file csa_32bit.v
+    Info (12023): Found entity 1: CSA_32bit File: C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca_16bit.v
+    Info (12023): Found entity 1: RCA_16bit File: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder3_8.v
+    Info (12023): Found entity 1: decoder3_8 File: C:/intelFPGA_lite/17.0/checkpoint2/decoder3_8.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file selecter3_5.v
+    Info (12023): Found entity 1: selecter3_5 File: C:/intelFPGA_lite/17.0/checkpoint2/selecter3_5.v Line: 1
+Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus Prime megafunction library File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux.v
+    Info (12023): Found entity 1: mux File: C:/intelFPGA_lite/17.0/checkpoint2/mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll.v
+    Info (12023): Found entity 1: SLL File: C:/intelFPGA_lite/17.0/checkpoint2/SLL.v Line: 1
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Info (12128): Elaborating entity "CSA_32bit" for hierarchy "CSA_32bit:csa0_32" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 27
+Info (12128): Elaborating entity "RCA_16bit" for hierarchy "CSA_32bit:csa0_32|RCA_16bit:rca0_16" File: C:/intelFPGA_lite/17.0/checkpoint2/CSA_32bit.v Line: 11
+Info (12128): Elaborating entity "RCA" for hierarchy "CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0" File: C:/intelFPGA_lite/17.0/checkpoint2/RCA_16bit.v Line: 9
+Info (12128): Elaborating entity "FA" for hierarchy "CSA_32bit:csa0_32|RCA_16bit:rca0_16|RCA:rca0|FA:fa0" File: C:/intelFPGA_lite/17.0/checkpoint2/RCA.v Line: 11
+Info (12128): Elaborating entity "SLL" for hierarchy "SLL:sll" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 60
+Info (12128): Elaborating entity "mux" for hierarchy "SLL:sll|mux:mux0" File: C:/intelFPGA_lite/17.0/checkpoint2/SLL.v Line: 8
+Info (12128): Elaborating entity "SRA" for hierarchy "SRA:sra" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 62
+Info (12128): Elaborating entity "selecter3_5" for hierarchy "selecter3_5:selecter" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 64
+Warning (12241): 33 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/intelFPGA_lite/17.0/checkpoint2/alu.v Line: 4
+Info (21057): Implemented 596 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 74 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 487 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Wed Sep 27 20:04:19 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+
