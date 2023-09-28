@@ -1,0 +1,7 @@
+module RCA_16bit(dataA,dataB,Cin,Cout,Sum)
+  input [15:0] dataA,dataB;
+  input Cin;
+  output Cout;
+  output [15:0] Sum;
+  
+endmodule
