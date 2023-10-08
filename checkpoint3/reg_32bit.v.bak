@@ -1,0 +1,9 @@
+module reg_32bit (q, d, clk, en, clr);
+
+   input clk, clr,en;
+   input [31:0] d;
+   output [31:0] q;
+
+   /* YOUR CODE HERE */
+
+endmodule

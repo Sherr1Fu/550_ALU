@@ -1,0 +1,9 @@
+module decoder5_32(ctrl,out);
+  input [4:0] ctrl;
+  output [31:0] out;
+  
+  wire [31:0] data;
+  assign data = 32'b0000_0000_0000_0000_0000_0000_0000_0001;
+  SLL SLL0(data,ctrl,out);
+  
+endmodule
